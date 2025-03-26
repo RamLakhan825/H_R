@@ -2,14 +2,13 @@ import React from 'react';
 import BlueArrow from './arrow';
 import CommonHeading from './CommonHeading';
 
-const  HowWePlay=()=>{
+const HowWePlay = () => {
   return (
     <div className="mt-[2vw] relative">
-
       <CommonHeading title="How we play" />
 
       <div 
-        className="flex flex-wrap justify-center gap-4 p-2 mt-5"
+        className="flex flex-wrap justify-center items-center gap-4 p-2 mt-5"
       >
         {[
           { text: "Assess", color: "#0066cc", boxPoints: ["Situation Analysis", "Define Arena of engagement", "First level problem definition"] },
@@ -20,7 +19,7 @@ const  HowWePlay=()=>{
         ].map((step, index) => (
           <div 
             key={index} 
-            className="min-h-[250px] flex flex-col justify-between w-full sm:w-auto"
+            className="min-h-[250px] flex flex-col justify-between w-full sm:w-auto text-center items-center"
           >
             <BlueArrow text={step.text} color={step.color} boxPoints={step.boxPoints} width={240} />
           </div>
@@ -31,4 +30,3 @@ const  HowWePlay=()=>{
 }
 
 export default HowWePlay;
-

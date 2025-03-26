@@ -15,13 +15,13 @@ const IndustriesWeServed = () => {
         {industries.map((industry, index) => (
           <div 
             key={index} 
-            className=' text-white text-center p-4 h-24 shadow-md hover:scale-105 transition-transform duration-200 cursor-pointer flex items-center justify-center'
-             style={{backgroundColor:"#2596be"}}
+            className='text-white text-center p-4 h-24 shadow-md hover:scale-105 transition-transform duration-200 cursor-pointer flex items-center justify-center hover:bg-opacity-80 active:scale-95'
+            style={{backgroundColor:"#2596be"}}
           >
             {industry}
           </div>
         ))}
-        <div className='bg-white text-black font-semibold text-center p-4 h-24 shadow-md flex items-center justify-center'>
+        <div className='bg-white text-black font-semibold text-center p-4 h-24 shadow-md flex items-center justify-center hover:scale-105 transition-transform duration-200 cursor-pointer hover:bg-gray-200 active:scale-95'>
           And Many More...
         </div>
       </div>   

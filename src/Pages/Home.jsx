@@ -17,7 +17,7 @@ import HowWePlay from '../Components/HowWePlay'
 
 const Home = () => {
   return (
-    <div>
+    <div className="w-full overflow-x-hidden">
       <Hero/>
       <Contact/>
 
